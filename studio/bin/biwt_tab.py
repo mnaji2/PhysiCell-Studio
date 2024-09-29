@@ -2900,12 +2900,14 @@ class BioinformaticsWalkthrough(QWidget):
         self.open_next_window(BioinformaticsWalkthroughWindow_PositionsWindow, show=True)
 
     def continue_from_positions(self):
-        self.write_to_file()
+        self.open_next_window(BioinformaticsWalkthrough_LoadCellParameters, show=True)
 
-    ### Write data
+    def continue_from_parameters(self):
+        self.write_to_file()
+    
     def write_to_file(self):
         self.open_next_window(BioinformaticsWalkthroughWindow_WritePositions, show=True)
-        
+
     ### Finish
     def close_up(self):
         plt.style.use("default")
@@ -2921,7 +2923,28 @@ class BioinformaticsWalkthrough(QWidget):
         self.window.close()
         print("BioinformaticsWalkthroughWindow: Colors will likely change in the ICs tab due to previous cell types being present.")
 
-# helper functions
+class BioinformaticsWalkthrough_LoadCellParameters(BioinformaticsWalkthroughWindow):
+    def __init__(self, biwt):
+        super().__init__(biwt)
+        print("---Loading cell parameters---")
+        vbox = QVBoxLayout()
+
+        go_back_button = GoBackButton(self, self.biwt)
+
+        continue_button = ContinueButton(self, self.process_window, styleSheet=self.biwt.qpushbutton_style_sheet)
+
+        hbox = QHBoxLayout()
+        hbox.addWidget(go_back_button)
+        hbox.addWidget(continue_button)
+
+        vbox.addLayout(hbox)
+        self.setLayout(vbox)
+
+        self.resize(800, 600)
+
+    def process_window(self):
+        self.biwt.continue_from_parameters()
+        
 def create_checkboxes_for_cell_types(vbox, cell_types):
     checkbox_dict = {}
     for cell_type in cell_types:

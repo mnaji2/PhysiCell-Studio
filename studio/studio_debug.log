@@ -9,17 +9,17 @@ DEBUG:root:cell_def_tab.py: ------- fill_substrate_colormap_comboboxes
 DEBUG:root:=======================  microenv populate_tree  ======================= 
 DEBUG:root:dc_ic_units =  mmHg
 DEBUG:root:dc_bc_units = mmHg
-DEBUG:root:bv = <Element 'boundary_value' at 0x17389f6f0>
+DEBUG:root:bv = <Element 'boundary_value' at 0x13f645170>
 DEBUG:root:   -------- substrate:  dirichlet_xmin = 0
-DEBUG:root:bv = <Element 'boundary_value' at 0x17389f740>
-DEBUG:root:bv = <Element 'boundary_value' at 0x17389f790>
-DEBUG:root:bv = <Element 'boundary_value' at 0x17389f7e0>
-DEBUG:root:bv = <Element 'boundary_value' at 0x17389f830>
-DEBUG:root:bv = <Element 'boundary_value' at 0x17389f880>
-DEBUG:root:------- options: <Element 'calculate_gradients' at 0x17389f920>
-DEBUG:root:------- options: <Element 'track_internalized_substrates_in_each_agent' at 0x17389f9c0>
-DEBUG:root:------- options: <Element 'initial_condition' at 0x17389fa10>
-DEBUG:root:------- options: <Element 'dirichlet_nodes' at 0x17389fab0>
+DEBUG:root:bv = <Element 'boundary_value' at 0x13f6451c0>
+DEBUG:root:bv = <Element 'boundary_value' at 0x13f645210>
+DEBUG:root:bv = <Element 'boundary_value' at 0x13f645260>
+DEBUG:root:bv = <Element 'boundary_value' at 0x13f6452b0>
+DEBUG:root:bv = <Element 'boundary_value' at 0x13f645300>
+DEBUG:root:------- options: <Element 'calculate_gradients' at 0x13f6453a0>
+DEBUG:root:------- options: <Element 'track_internalized_substrates_in_each_agent' at 0x13f645440>
+DEBUG:root:------- options: <Element 'initial_condition' at 0x13f645490>
+DEBUG:root:------- options: <Element 'dirichlet_nodes' at 0x13f645530>
 DEBUG:root:
 
 =======================  leaving microenv populate_tree  =====================
@@ -65,27 +65,27 @@ DEBUG:root: >> cycle_path= .//cell_definition[1]//phenotype//cycle
 DEBUG:root:   cycle code= 6
 DEBUG:root: >> phase_transition_path 
 DEBUG:root: >> phase_durations_path =.//cell_definition[1]//phenotype//cycle//phase_durations
-DEBUG:root: >> pd_uep =<Element 'phase_durations' at 0x17389fce0>
-DEBUG:root:phase_duration= <Element 'duration' at 0x17389fd80>
+DEBUG:root: >> pd_uep =<Element 'phase_durations' at 0x13f645760>
+DEBUG:root:phase_duration= <Element 'duration' at 0x13f645800>
 DEBUG:root:------------ sval for phase duration= 300.0
-DEBUG:root:phase_duration= <Element 'duration' at 0x17389fe20>
+DEBUG:root:phase_duration= <Element 'duration' at 0x13f6458a0>
 DEBUG:root:------------ sval for phase duration= 480
-DEBUG:root:phase_duration= <Element 'duration' at 0x17389fec0>
+DEBUG:root:phase_duration= <Element 'duration' at 0x13f645940>
 DEBUG:root:------------ sval for phase duration= 240
-DEBUG:root:phase_duration= <Element 'duration' at 0x17389ff60>
+DEBUG:root:phase_duration= <Element 'duration' at 0x13f6459e0>
 DEBUG:root:------------ sval for phase duration= 60
 DEBUG:root:
 ===== populate_tree():  death
-DEBUG:root:death_uep=<Element 'death' at 0x17389ffb0>
+DEBUG:root:death_uep=<Element 'death' at 0x13f645a30>
 DEBUG:root:-------- parsing apoptosis!
-DEBUG:root: >> pd_uep =<Element 'phase_durations' at 0x1738e0180>
-DEBUG:root:phase_duration= <Element 'duration' at 0x1738e0220>
+DEBUG:root: >> pd_uep =<Element 'phase_durations' at 0x13f645bc0>
+DEBUG:root:phase_duration= <Element 'duration' at 0x13f645c60>
 DEBUG:root:index= 0
 DEBUG:root:-------- parsing necrosis!
-DEBUG:root: >> pd_uep =<Element 'phase_durations' at 0x1738e09a0>
-DEBUG:root:<Element 'duration' at 0x1738e0a40>
+DEBUG:root: >> pd_uep =<Element 'phase_durations' at 0x13f6463e0>
+DEBUG:root:<Element 'duration' at 0x13f646480>
 DEBUG:root:index= 0
-DEBUG:root:<Element 'duration' at 0x1738e0ae0>
+DEBUG:root:<Element 'duration' at 0x13f646520>
 DEBUG:root:index= 1
 DEBUG:root:volume_path=.//cell_definition[1]//phenotype//volume//
 DEBUG:root:
@@ -102,8 +102,8 @@ DEBUG:root:
 DEBUG:root:motility_advanced_chemotaxis_path= .//cell_definition[1]//phenotype//motility//options//advanced_chemotaxis//
 DEBUG:root:chemotactic_sensitivity= {'substrate': '0.0'}
 DEBUG:root:sensitivity_path= .//cell_definition[1]//phenotype//motility//options//advanced_chemotaxis//chemotactic_sensitivities
-DEBUG:root:---- found chemotactic_sensitivities: <Element 'chemotactic_sensitivities' at 0x1738e23e0>
-DEBUG:root:subelm=<Element 'chemotactic_sensitivity' at 0x1738e2480>
+DEBUG:root:---- found chemotactic_sensitivities: <Element 'chemotactic_sensitivities' at 0x13f647e20>
+DEBUG:root:subelm=<Element 'chemotactic_sensitivity' at 0x13f647ec0>
 DEBUG:root: chemotactic_sensitivity--> substrate = 0.0
 DEBUG:root:{'substrate': '0.0'}
 DEBUG:root:------ motility2_substrate_changed_cb(): idx = 0
@@ -116,14 +116,14 @@ DEBUG:root:     chemotactic_sensitivity (dict)= {'substrate': '0.0'}
 DEBUG:root:
 ===== populate_tree():  secretion
 DEBUG:root:secretion_path = .//cell_definition[1]//phenotype//secretion//
-DEBUG:root:uep_secretion = <Element 'secretion' at 0x1738e2570>
+DEBUG:root:uep_secretion = <Element 'secretion' at 0x13f647fb0>
 DEBUG:root:0) -- secretion substrate = substrate
 DEBUG:root:------ done parsing secretion:
 DEBUG:root:
 ===== populate_tree():  cell_interactions
 DEBUG:root:---- cell_interactions_path= .//cell_definition[1]//phenotype//cell_interactions
 DEBUG:root:---- found cell_interactions:
-DEBUG:root:uep2= <Element 'live_phagocytosis_rates' at 0x1738e2ac0>
+DEBUG:root:uep2= <Element 'live_phagocytosis_rates' at 0x13f654540>
 DEBUG:root: live_phagocytosis_rate= {'default': '0'}
 DEBUG:root: attack_rate= {'default': '0'}
 DEBUG:root: fusion_rate= {'default': '0'}
@@ -141,7 +141,7 @@ DEBUG:root:
 DEBUG:root:------ done parsing intracellular:
 DEBUG:root:
 ===== populate_tree():  custom data
-DEBUG:root:uep_custom_data= <Element 'custom_data' at 0x1738e3060>
+DEBUG:root:uep_custom_data= <Element 'custom_data' at 0x13f654ae0>
 DEBUG:root:--------------- populate_tree: (empty)custom_data = {}
 DEBUG:root:var.attrib.keys() = dict_keys(['conserved', 'units', 'description'])
 DEBUG:root:populate: cell_def_name= default --> custom_data: {'sample': ['1.0', False]}
@@ -698,7 +698,7 @@ DEBUG:matplotlib.font_manager:findfont: score(FontEntry(fname='/System/Library/F
 DEBUG:matplotlib.font_manager:findfont: score(FontEntry(fname='/System/Library/Fonts/Supplemental/SuperClarendon.ttc', name='Superclarendon', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
 DEBUG:matplotlib.font_manager:findfont: score(FontEntry(fname='/System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf', name='Noto Sans Sharada', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
 DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/anaconda3/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312a5ffb0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x13f4f33e0>
 DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=9.0.
 DEBUG:matplotlib.font_manager:findfont: score(FontEntry(fname='/opt/anaconda3/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
 DEBUG:matplotlib.font_manager:findfont: score(FontEntry(fname='/opt/anaconda3/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
@@ -1230,31 +1230,31 @@ DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:varian
 DEBUG:root:ics_tab.py: fill_celltype_combobox(): ['default']
 DEBUG:root:ics_tab.py: ------- fill_substrate_combobox
 DEBUG:root: --> substrate
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x312af3500> <matplotlib.colors.Normalize object at 0x312a5f1d0>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312a90c50>
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x312af61b0> <matplotlib.colors.Normalize object at 0x312af3500>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312af3dd0>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c3b7230> <matplotlib.colors.Normalize object at 0x16c346ab0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c373d40>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c373f80> <matplotlib.colors.Normalize object at 0x16c3b7230>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3d2cc0>
 DEBUG:root:ics_tab.py: fill_celltype_combobox(): ['default']
 DEBUG:root:ics_tab.py: ------- fill_substrate_combobox
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x312abc410> <matplotlib.colors.Normalize object at 0x312af61b0>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312af1160>
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x312a902f0> <matplotlib.colors.Normalize object at 0x312abc410>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312af7290>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c3ed700> <matplotlib.colors.Normalize object at 0x16c373f80>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3b4380>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c3ef560> <matplotlib.colors.Normalize object at 0x16c3ed700>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3b5cd0>
 DEBUG:root: --> substrate
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x312abce00> <matplotlib.colors.Normalize object at 0x312a902f0>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x315c4eb70>
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x172e5efc0> <matplotlib.colors.Normalize object at 0x312abce00>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x315c4d700>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x168937770> <matplotlib.colors.Normalize object at 0x16c3ef560>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3d2e70>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x13f4f33e0> <matplotlib.colors.Normalize object at 0x168937770>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3d2330>
 DEBUG:root:ics_tab.py: ------- fill_substrate_combobox
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x1718f4110> <matplotlib.colors.Normalize object at 0x172e5efc0>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312abd670>
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x17fb82f90> <matplotlib.colors.Normalize object at 0x1718f4110>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x312af7290>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x12e971a90> <matplotlib.colors.Normalize object at 0x13f4f33e0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3f97f0>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c3b41a0> <matplotlib.colors.Normalize object at 0x12e971a90>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3d15b0>
 DEBUG:root: --> substrate
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x312af2e70> <matplotlib.colors.Normalize object at 0x17fb82f90>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x315c64f20>
-DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x1718f4110> <matplotlib.colors.Normalize object at 0x312af2e70>
-DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x315c67f80>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c373500> <matplotlib.colors.Normalize object at 0x16c3b41a0>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3d3080>
+DEBUG:matplotlib.colorbar:colorbar update normal <matplotlib.colors.Normalize object at 0x16c3b4e90> <matplotlib.colors.Normalize object at 0x16c373500>
+DEBUG:matplotlib.colorbar:locator: <matplotlib.ticker.AutoLocator object at 0x16c3b78f0>
 DEBUG:root:studio.py: calling vis_tab.substrates_cbox_changed_cb(2)
 DEBUG:h5py._conv:Creating converter from 3 to 5
 DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=14.399999999999999.
