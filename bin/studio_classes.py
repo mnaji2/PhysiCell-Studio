@@ -2,11 +2,7 @@ import sys
 
 from PyQt5 import QtCore
 from PyQt5.QtCore import Qt, QEvent
-<<<<<<< HEAD
-from PyQt5.QtWidgets import QFrame, QCheckBox, QWidget, QLineEdit, QWidget, QComboBox, QLabel, QCompleter, QToolTip, QRadioButton
-=======
-from PyQt5.QtWidgets import QFrame, QCheckBox, QWidget, QLineEdit, QWidget, QComboBox, QLabel, QCompleter, QToolTip, QVBoxLayout, QDialog
->>>>>>> biwt-local
+from PyQt5.QtWidgets import QFrame, QCheckBox, QWidget, QLineEdit, QWidget, QComboBox, QLabel, QCompleter, QToolTip
 from PyQt5.QtGui import QValidator, QDoubleValidator
 from PyQt5.QtCore import Qt, QSortFilterProxyModel, QEvent
 

@@ -47,11 +47,7 @@ from PyQt5 import QtCore, QtGui
 from PyQt5.QtWidgets import QApplication,QWidget,QLineEdit,QHBoxLayout,QVBoxLayout,QRadioButton,QPushButton, QLabel,QCheckBox,QComboBox,QScrollArea,QGridLayout, QFileDialog, QButtonGroup, QSplitter, QSizePolicy, QSpinBox
 from PyQt5.QtGui import QIcon
 
-<<<<<<< HEAD
-from studio_classes import QHLine, QVLine, QCheckBox_custom, QRadioButton_custom
-=======
-from studio_classes import QHLine, QVLine, QCheckBox_custom, LegendWindow
->>>>>>> biwt-local
+from studio_classes import QHLine, QVLine, QCheckBox_custom
 
 class GoBackButton(QPushButton):
     def __init__(self, parent, biwt, pre_cb=None, post_cb=None):
