@@ -50,7 +50,6 @@
         <legacy_random_points_on_sphere_in_divide>false</legacy_random_points_on_sphere_in_divide>
         <virtual_wall_at_domain_edge>true</virtual_wall_at_domain_edge>
         <disable_automated_spring_adhesions>false</disable_automated_spring_adhesions>
-        <random_seed>0</random_seed>
     </options>
 
     <microenvironment_setup>
@@ -83,7 +82,7 @@
     </microenvironment_setup>
 
     <cell_definitions>
-        <cell_definition name="default" ID="0">
+        <cell_definition name="cancer" ID="0">
             <phenotype>
                 <cycle code="6" name="Flow cytometry model (separated)">
                     <phase_durations units="min">
@@ -140,16 +139,17 @@
                     <cell_cell_repulsion_strength units="micron/min">10.0</cell_cell_repulsion_strength>
                     <relative_maximum_adhesion_distance units="dimensionless">1.25</relative_maximum_adhesion_distance>
                     <cell_adhesion_affinities>
-                        <cell_adhesion_affinity name="default">1</cell_adhesion_affinity>
+                        <cell_adhesion_affinity name="cancer">1</cell_adhesion_affinity>
                     </cell_adhesion_affinities>
                     <options>
                         <set_relative_equilibrium_distance enabled="false" units="dimensionless">1.8</set_relative_equilibrium_distance>
                         <set_absolute_equilibrium_distance enabled="false" units="micron">15.12</set_absolute_equilibrium_distance>
                     </options>
+                    <cell_BM_adhesion_strength units="micron/min">4.0</cell_BM_adhesion_strength>
+                    <cell_BM_repulsion_strength units="micron/min">10.0</cell_BM_repulsion_strength>
                     <attachment_elastic_constant units="1/min">0.01</attachment_elastic_constant>
                     <attachment_rate units="1/min">0.0</attachment_rate>
                     <detachment_rate units="1/min">0.0</detachment_rate>
-                    <maximum_number_of_attachments>12</maximum_number_of_attachments>
                 </mechanics>
                 <motility>
                     <speed units="micron/min">1</speed>
@@ -181,66 +181,27 @@
                     </substrate>
                 </secretion>
                 <cell_interactions>
-                    <apoptotic_phagocytosis_rate units="1/min">0.0</apoptotic_phagocytosis_rate>
-                    <necrotic_phagocytosis_rate units="1/min">0.0</necrotic_phagocytosis_rate>
-                    <other_dead_phagocytosis_rate units="1/min">0.0</other_dead_phagocytosis_rate>
+                    <dead_phagocytosis_rate units="1/min">0</dead_phagocytosis_rate>
                     <live_phagocytosis_rates>
-                        <phagocytosis_rate name="default" units="1/min">0</phagocytosis_rate>
+                        <phagocytosis_rate name="cancer" units="1/min">0</phagocytosis_rate>
                     </live_phagocytosis_rates>
                     <attack_rates>
-                        <attack_rate name="default" units="1/min">0</attack_rate>
+                        <attack_rate name="cancer" units="1/min">0</attack_rate>
                     </attack_rates>
-                    <attack_damage_rate units="1/min">1</attack_damage_rate>
-                    <attack_duration units="min">0.1</attack_duration>
+                    <damage_rate units="1/min">1</damage_rate>
                     <fusion_rates>
-                        <fusion_rate name="default" units="1/min">0</fusion_rate>
+                        <fusion_rate name="cancer" units="1/min">0</fusion_rate>
                     </fusion_rates>
                 </cell_interactions>
                 <cell_transformations>
                     <transformation_rates>
-                        <transformation_rate name="default" units="1/min">0</transformation_rate>
+                        <transformation_rate name="cancer" units="1/min">0</transformation_rate>
                     </transformation_rates>
                 </cell_transformations>
-                <cell_integrity>
-                    <damage_rate units="1/min">0.0</damage_rate>
-                    <damage_repair_rate units="1/min">0.0</damage_repair_rate>
-                </cell_integrity>
             </phenotype>
             <custom_data>
                 <sample conserved="false" units="dimensionless" description="">1.0</sample>
             </custom_data>
-            <initial_parameter_distributions enabled="true">
-                <distribution enabled="true" type="Uniform" check_base="false">
-                    <behavior>substrate secretion target</behavior>
-                    <min>0.01</min>
-                    <max>0.99</max>
-                </distribution>
-                <distribution enabled="true" type="Normal" check_base="false">
-                    <behavior>substrate uptake</behavior>
-                    <mu>0.005</mu>
-                    <sigma>0.0005</sigma>
-                    <lower_bound>0</lower_bound>
-                </distribution>
-                <distribution enabled="true" type="LogNormal" check_base="false">
-                    <behavior>substrate secretion</behavior>
-                    <mu>2</mu>
-                    <sigma>1</sigma>
-                    <lower_bound>0.01</lower_bound>
-                    <upper_bound>1000</upper_bound>
-                </distribution>
-                <distribution enabled="true" type="LogUniform" check_base="true">
-                    <behavior>Volume</behavior>
-                    <min>100</min>
-                    <max>10000</max>
-                </distribution>
-                <distribution enabled="true" type="Log10Normal" check_base="false">
-                    <behavior>custom:sample</behavior>
-                    <mu>2</mu>
-                    <sigma>2</sigma>
-                    <lower_bound>10</lower_bound>
-                    <upper_bound>1000</upper_bound>
-                </distribution>
-            </initial_parameter_distributions>
         </cell_definition>
     </cell_definitions>
 
@@ -253,7 +214,7 @@
 
     <cell_rules>
         <rulesets>
-            <ruleset protocol="CBHG" version="2.0" format="csv" enabled="false">
+            <ruleset protocol="CBHG" version="2.0" format="csv" enabled="true">
                 <folder>./config</folder>
                 <filename>rules0.csv</filename>
             </ruleset>
@@ -262,7 +223,7 @@
     </cell_rules>
 
     <user_parameters>
-        <random_seed type="int" units="none" description="">0</random_seed>
+        <random_seed type="int" units="dimensionless" description="">0</random_seed>
         <number_of_cells type="int" units="none" description="initial number of cells (for each cell type)">5</number_of_cells>
     </user_parameters>
 </PhysiCell_settings>
