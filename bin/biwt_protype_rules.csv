@@ -1,0 +1,13 @@
+rule_id,cell_type,signal,behavior,direction,go_id,go_name,gene_ratio,bg_ratio,rich_factor,fold_enrichment,z_score,p_value,p_adjust,q_value
+R1,cd4 t cell,anti-inflammatory factor gradient,transform to regulatory T cell,increase,GO:0045582,positive regulation of T cell differentiation,68/1218,183/13664,0.3715847,4.168582,13.499301,5.15E-26,1.70E-23,1.34E-23
+R2,cd4 t cell,anti-inflammatory factor gradient,transform to regulatory T cell,non-directional,GO:0030217,T cell differentiation,89/1218,299/13664,0.2976589,3.339253,12.794113,1.37E-25,3.80E-23,3.00E-23
+R3,cd4 t cell,anti-inflammatory factor gradient,transform to Th1 cell,decrease,GO:0045581,negative regulation of T cell differentiation,93/1218,355/13664,0.2619718,2.938902,11.579217,2.87E-22,5.61E-20,4.42E-20
+R4,cd4 t cell,pro-inflammatory factor gradient,transform to Th1 cell,increase,GO:0045582,positive regulation of T cell differentiation,42/1218,112/13664,0.375,4.206897,10.660413,1.02E-16,9.13E-15,7.19E-15
+R5,cd4 t cell,pro-inflammatory factor gradient,transform to Th1 cell,non-directional,GO:0030217,T cell differentiation,43/1218,120/13664,0.3583333,4.019923,10.394291,3.10E-16,2.59E-14,2.04E-14
+R6,cd4 t cell,interferon gradient,migration speed,increase,GO:0072678,T cell migration,28/1218,65/13664,0.4307692,4.832538,9.688831,2.28E-13,1.38E-11,1.09E-11
+R7,cd4 t cell,interferon gradient,migration speed,non-directional,GO:0050900,leukocyte migration,52/1218,198/13664,0.2626263,2.946244,8.629634,5.09E-13,2.98E-11,2.35E-11
+R8,cd4 t cell,pro-inflammatory factor gradient,cycle entry,increase,GO:0002687,positive regulation of leukocyte migration,32/1218,116/13664,0.2758621,3.094728,7.087628,4.15E-09,1.33E-07,1.05E-07
+R9,cd4 t cell,contact with cd8 t cell,cycle entry,increase,GO:0042098,T cell proliferation,34/1218,139/13664,0.2446043,2.744067,6.465225,3.81E-08,1.01E-06,7.96E-07
+R10,cd4 t cell,contact with dendritic cell,cycle entry,increase,GO:0046631,alpha-beta T cell activation,14/1218,38/13664,0.3684211,4.133091,6.050098,2.32E-06,4.38E-05,3.45E-05
+R11,cd4 t cell,interferon,cycle entry,increase,GO:0035710,CD4-positive alpha-beta T cell activation,27/1218,121/13664,0.2231405,2.503277,5.195844,6.21E-06,1.07E-04,8.43E-05
+R12,cd4 t cell,anti-inflammatory factor gradient,interferon secretion,decrease,GO:0032689,negative regulation of type II interferon production,12/1218,47/13664,0.2553191,2.864270,4.004966,6.56E-04,6.40E-03,5.04E-03

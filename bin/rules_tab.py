@@ -2065,6 +2065,10 @@ class Rules(QWidget):
 
     #-----------------------------------------------------------
     def fill_gui(self):
+        if os.environ.get("BIWT_DEV_MODE", "False") == "True":
+            print("[BIWT] Skipping Studio rule loader (BIWT mode active)")
+            return
+
         # logging.debug(f'\n\n------------\nrules_tab.py: fill_gui():')
         print(f'\n\n------------\nrules_tab.py: fill_gui():')
 
